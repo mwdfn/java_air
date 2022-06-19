@@ -4,12 +4,13 @@ import people.passengers.Passenger;
 import people.staff.CabinCrew;
 import people.staff.Pilot;
 import planes.Plane;
+import planes.PlaneType;
 
 import java.util.ArrayList;
 
 public class Flight {
 
-    private Plane plane;
+    private PlaneType plane;
     private ArrayList<Pilot> pilots;
     private ArrayList<CabinCrew> cabinCrew;
     private String flightNumber;
@@ -18,7 +19,7 @@ public class Flight {
     private String departureTime;
     private ArrayList<Passenger> passengers;
 
-    public Flight(Plane plane, String flightNumber, String destination, String departureAirport, String departureTime) {
+    public Flight(PlaneType plane, String flightNumber, String destination, String departureAirport, String departureTime) {
         this.plane = plane;
         this.pilots = new ArrayList<>();
         this.cabinCrew = new ArrayList<>();
@@ -29,7 +30,7 @@ public class Flight {
         this.passengers = new ArrayList<>();
     }
 
-    public Plane getPlane() {
+    public PlaneType getPlane() {
         return plane;
     }
 
@@ -61,4 +62,15 @@ public class Flight {
         return passengers;
     }
 
+    public int getNumberOfSeats() {
+        return plane.getCapacity();
+    }
+
+    public int getNumberOfPassengers() {
+        return passengers.size();
+    }
+
+    public void addPassengerToPlane(Passenger passenger){
+        passengers.add(passenger);
+    }
 }
