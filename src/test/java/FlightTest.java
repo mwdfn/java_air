@@ -29,8 +29,8 @@ public class FlightTest {
         assertEquals(1, flight.getNumberOfPassengers());
     }
 
-//    @Test
-//    public void canReturnNumberOfAvailableSeats(){
-//        assertEquals(60, flight.getAvailableSeats());
-//    }
+    @Test
+    public void canReturnNumberOfAvailableSeats(){
+        assertEquals(59, flight.getAvailableSeats());
+    }
 }
