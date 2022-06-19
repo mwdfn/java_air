@@ -25,11 +25,11 @@ public class PlaneTest {
 
     @Test
     public void planeTypeHasPassengerCapacity() {
-        assertEquals(243, plane.getPassengerCapacityValueFromEnum());
+        assertEquals(410, plane.getPassengerCapacityValueFromEnum());
     }
 
     @Test
     public void planeHasMaxLoad() {
-        assertEquals(39800.00,39800.00, plane.getMaxLoadValueFromEnum());
+        assertEquals(280000.00,280000.00, plane.getMaxLoadValueFromEnum());
     }
 }

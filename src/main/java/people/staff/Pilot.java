@@ -13,4 +13,7 @@ public class Pilot extends Staff{
         return licenceNumber;
     }
 
+    public String flyPlane(){
+        return "This is your captain speaking. My name's " + name + ". Fasten your seatbelts and prepare for liftoff.";
+    }
 }
