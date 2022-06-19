@@ -15,13 +15,21 @@ public class PlaneTest {
 
     @Test
     public void hasAPlaneType(){
-        System.out.println(plane.getPlaneType());
         assertEquals(PlaneType.WIDE_BODY_AIRLINER, plane.getPlaneTypeEnumKey());
     }
 
     @Test
     public void planeTypeHasAValue(){
-        assertEquals("Airbus A350", plane.getPlaneTypeValueFromEnum());
+        assertEquals("Airbus A350", plane.getPlaneTypeNameValueFromEnum());
     }
 
+    @Test
+    public void planeTypeHasPassengerCapacity() {
+        assertEquals(243, plane.getPassengerCapacityValueFromEnum());
+    }
+
+    @Test
+    public void planeHasMaxLoad() {
+        assertEquals(39800.00,39800.00, plane.getMaxLoadValueFromEnum());
+    }
 }

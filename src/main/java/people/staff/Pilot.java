@@ -4,7 +4,7 @@ public class Pilot extends Staff{
 
     private String licenceNumber;
 
-    public Pilot(String name, String rank, String licenceNumber) {
+    public Pilot(String name, RankType rank, String licenceNumber) {
         super(name, rank);
         this.licenceNumber = licenceNumber;
     }
