@@ -22,6 +22,7 @@ public class FlightTest {
         passenger3 = new Passenger("Moby", 5);
         flight.addPassengerToPlane(passenger1);
         flight.addPassengerToPlane(passenger2);
+        flight.addPassengerToPlane(passenger3);
     }
 
     //@Test
@@ -36,11 +37,13 @@ public class FlightTest {
 
     //@Test
     public void canReturnNumberOfAvailableSeats(){
-        assertEquals(59, flight.getAvailableSeats());
+        assertEquals(57, flight.getAvailableSeats());
     }
 
     //@Test
     public void canOnlyAddPassengerIfSeatsAreAvailable(){
         assertEquals(2, flight.getNumberOfPassengers());
     }
+
+    
 }
