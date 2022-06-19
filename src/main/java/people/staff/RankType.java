@@ -16,5 +16,5 @@ public enum RankType {
     public String getRankTypeValue(){
         return this.rankName;
     }
-    
+
 }

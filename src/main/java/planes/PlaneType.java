@@ -2,17 +2,30 @@ package planes;
 
 public enum PlaneType {
 
-    MIDSIZE_JET("Bombardier Learjet 35"),
-    NARROW_BODY_AIRLINER("Boeing 757"),
-    WIDE_BODY_AIRLINER("Airbus A350");
+    MIDSIZE_JET("Bombardier Learjet 35", 60, ),
+    NARROW_BODY_AIRLINER("Boeing 757", 243),
+    WIDE_BODY_AIRLINER("Airbus A350", 410, 280000.00);
 
     private final String name;
+    private final int capacity;
+    private final double maximumLoadInKg;
 
-    PlaneType(String name) {
+    PlaneType(String name, int capacity, double maximumLoadInKg){
         this.name = name;
+        this.capacity = capacity;
+        this.maximumLoadInKg = maximumLoadInKg;
     }
 
-    public String getPlaneTypeValue(){
-        return this.name;
+    public String getPlaneTypeName(){
+        return name;
     }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public double getMaximumLoadInKg() {
+        return maximumLoadInKg;
+    }
+
 }
