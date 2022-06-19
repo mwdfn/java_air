@@ -5,7 +5,8 @@ public enum RankType {
     RANK1("Captain"),
     RANK2("First Officer"),
     RANK3("Purser"),
-    RANK4("Flight Attendant");
+    RANK4("Flight Attendant"),
+    RANK5("Flight Manager");
 
     private final String rankName;
 
