@@ -71,7 +71,9 @@ public class Flight {
     }
 
     public void addPassengerToPlane(Passenger passenger){
-        passengers.add(passenger);
+        if(passengers.size() < plane.getCapacity()) {
+            passengers.add(passenger);
+        }
     }
 
     public int getAvailableSeats() {
